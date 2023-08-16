@@ -1,38 +1,145 @@
+/* App.css */
+
+/* Reset some default styles */
+body, h1, h2, p, button, input {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 20px 0;
+  font-size: 28px;
+  color: #6612ee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard button {
+  padding: 10px 20px;
+  background-color: #0004ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dashboard button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard p {
+  font-size: 18px;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color:rgb(217, 255, 0);
+  
+  
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #EBE76C;
+  font-weight: bold;
+}
+
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.create-user-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-user-form h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.create-user-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.create-user-form input[type="email"],
+.create-user-form input[type="text"],
+.create-user-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.create-user-form input[type="email"]:focus,
+.create-user-form input[type="text"]:focus,
+.create-user-form input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.create-user-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.create-user-form button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  background-color:#007bff;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-form,
+.profile {
+  /* Style for the edit and profile forms */
 }
